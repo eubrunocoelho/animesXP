@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <!-- header -->
@@ -19,15 +19,34 @@
         <div class="header__container">
             <h1 class="header__logo">animesXP</h1>
             <nav class="header__nav">
+                <div class="nav__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Animes</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Cartoons</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
                 <form action="#" class="nav__search">
-                    <input type="text" class="search__input">
+                    <input type="text" class="search__input" placeholder="Pesquisar...">
                     <button type="submit" class="search__button">
-                        
+                        <ion-icon name="search" class="search__icon"></ion-icon>
                     </button>
                 </form>
             </nav>
         </div>
     </header>
     <!-- end header -->
+    <!-- scripts -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- end scripts -->
 </body>
 </html>
