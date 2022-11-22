@@ -27,9 +27,9 @@ html {
 }
 
 body {
-    font-family: var(--roboto-condensed);
     display: flex;
     flex-direction: column;
+    font-family: var(--roboto-condensed);
     min-height: 100%;
 }
 
@@ -43,21 +43,21 @@ body {
 
 .header {
     background: #232323;
-    height: 100px;
     border-bottom: 3px solid var(--primary-color);
     box-shadow: -1px 0px 2.9991px 2px rgba(204, 204, 204, 1);
+    height: 100px;
 }
 
 .header__container {
-    display: flex;
     align-items: center;
-    justify-content: start;
     background: #232323;
+    display: flex;
     height: 100%;
+    justify-content: start;
     margin: 0 auto;
     max-width: 1200px;
-    width: 100%;
     padding: 0 8px 0 8px;
+    width: 100%;
 }
 
 /**
@@ -65,13 +65,13 @@ body {
 */
 
 .header__mobile-button {
+    align-items: center;
     cursor: pointer;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
     gap: 4px;
     height: 40px;
+    justify-content: center;
     width: 40px;
 }
 
@@ -89,9 +89,9 @@ body {
 .header__logo {
     background: url(../img/logo/logo-mini.png) center no-repeat;
     height: 60px;
-    width: 182px;
-    text-indent: -9999px;
     margin: 0 0 0 16px;
+    text-indent: -9999px;
+    width: 182px;
 }
 
 /**
@@ -121,8 +121,8 @@ body {
 }
 
 .menu__link {
-    font-size: 22px;
     color: #fff;
+    font-size: 22px;
     text-decoration: none;
 }
 
@@ -141,15 +141,15 @@ body {
 
 .search__input {
     background: #000;
-    color: #cecece;
-    padding: 0 55px 0 15px;
-    width: 230px;
-    height: 40px;
-    outline: none;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
+    color: #cecece;
     font-size: 16px;
     font-weight: 300;
+    height: 40px;
+    outline: none;
+    padding: 0 55px 0 15px;
+    width: 230px;
 }
 
 .search__input::placeholder {
@@ -158,19 +158,19 @@ body {
 
 .search__button {
     background: var(--primary-color);
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    right: 0;
-    line-height: 0;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    height: 40px;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    width: 40px;
 }
 
 .search__icon {
-    font-size: 26px;
     color: #000;
+    font-size: 26px;
 }
 
 /**
@@ -205,9 +205,9 @@ body {
     }
 
     .header__nav {
+        align-items: center;
         display: flex;
         flex: 1;
-        align-items: center;
         justify-content: end;
     }
 
