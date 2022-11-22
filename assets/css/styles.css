@@ -7,7 +7,42 @@
     --rajdhani-font: 'Rajdhani', sans-serif;
     --primary-color: #0babfc;
     --secondary-color: #232323;
+    --discord-color: #5865f2;
+    --facebook-color: #139cf7;
+    --twitter-color: #1d9bf0;
 }
+
+/**
+* Modifiers #start
+*/
+
+.background--discord {
+    background: var(--discord-color) !important;
+}
+
+.background--discord:hover {
+    background: rgba(88, 101, 242, .89) !important;
+}
+
+.background--facebook {
+    background: var(--facebook-color) !important;
+}
+
+.background--facebook:hover {
+    background: rgba(19, 156, 247, .89) !important;
+}
+
+.background--twitter {
+    background: var(--twitter-color) !important;
+}
+
+.background--twitter:hover {
+    background: rgba(29, 155, 240, .89) !important;
+}
+
+/**
+* Modifiers #end
+*/
 
 /**
 * Base #start
@@ -198,6 +233,7 @@ body {
 .footer__top {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 30px 0 45px 0;
 }
 
@@ -206,6 +242,38 @@ body {
     height: 60px;
     width: 182px;
     text-indent: -9999px;
+}
+
+.footer__division {
+    width: 1px;
+    background: #000;
+    margin: 0 22px 0 24px;
+    height: 60px;
+    display: none;
+}
+
+.footer__socials {
+    flex: 1;
+    display: none;
+}
+
+.socials__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.socials__link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .footer__copy {
@@ -259,6 +327,22 @@ body {
         background: url(../img/logo/logo-large.png);
         width: 255px;
     }
+
+    .footer__container {
+        padding: 0 10px 0 10px;
+    }
+
+    .footer__top {
+        justify-content: start;
+    }
+
+    .footer__division {
+        display: block;
+    }
+
+    .footer__socials {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -275,6 +359,10 @@ body {
 
     .nav__menu {
         display: none;
+    }
+
+    .footer__container {
+        padding: 0 20px 0 20px;
     }
 }
 
@@ -293,6 +381,10 @@ body {
 
     .nav__menu {
         display: block;
+    }
+
+    .footer__container {
+        padding: 0 30px 0 30px;
     }
 }
 
