@@ -219,8 +219,8 @@ body {
 .footer {
     background: var(--secondary-color);
     border-top: 3px solid var(--primary-color);
-    margin-top: auto;
     box-shadow: 0px -2px 2.97px 0.03px rgba(204, 204, 204, 1);
+    margin-top: auto;
 }
 
 .footer__container {
@@ -230,62 +230,78 @@ body {
     padding: 0 8px 0 8px;
 }
 
+/**
+* Footer #top
+*/
+
 .footer__top {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 30px 0 45px 0;
 }
+
+/**
+* Footer #logo
+*/
 
 .footer__logo {
     background: url(../img/logo/logo-mini.png) center no-repeat;
     height: 60px;
-    width: 182px;
     text-indent: -9999px;
+    width: 182px;
 }
 
 .footer__division {
-    width: 1px;
     background: #000;
-    margin: 0 22px 0 24px;
-    height: 60px;
     display: none;
+    height: 60px;
+    margin: 0 22px 0 24px;
+    width: 1px;
 }
 
+/**
+* Footer #socials
+*/
+
 .footer__socials {
-    flex: 1;
     display: none;
+    flex: 1;
 }
 
 .socials__list {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .socials__link {
+    align-items: center;
+    border-radius: 5px;
     color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 5px;
     font-size: 16px;
+    height: 32px;
+    justify-content: center;
     text-decoration: none;
+    width: 32px;
 }
 
+/**
+* Footer #copyright
+*/
+
 .footer__copy {
-    padding: 12px 0 12px 0;
     border-top: 1px solid #000;
+    padding: 12px 0 12px 0;
 }
 
 .copy__text {
+    color: #fff;
     font-family: var(--rajdhani-font);
     font-size: 14px;
     font-weight: 500;
-    color: #fff;
     text-align: center;
 }
 
