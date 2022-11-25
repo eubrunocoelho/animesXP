@@ -213,6 +213,52 @@ body {
 */
 
 /**
+* Main #start
+*/
+
+.main {
+    margin: 50px 0 90px 0;
+}
+
+/**
+* Section #start
+*/
+
+.section {
+    width: 100%;
+}
+
+.section__title {
+    font-family: var(--rajdhani-font);
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/**
+* Section #end
+*/
+
+/**
+* Featured #start
+*/
+
+.featured {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 8px 0 8px;
+}
+
+/**
+* Featured #end
+*/
+
+/**
+* Main #end
+*/
+
+/**
 * Footer #start
 */
 
