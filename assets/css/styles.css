@@ -10,6 +10,7 @@
     --discord-color: #5865f2;
     --facebook-color: #139cf7;
     --twitter-color: #1d9bf0;
+    --default-radius: 4px 7px 4px 7px;
 }
 
 /**
@@ -233,6 +234,7 @@ body {
     font-size: 27px;
     font-weight: 700;
     color: var(--primary-color);
+    margin: 0 0 20px 0;
 }
 
 /**
@@ -248,6 +250,42 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 8px 0 8px;
+}
+
+/**
+* Featured #swiper
+*/
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    width: 147px;
+}
+
+.swiper-slide__cover {
+    background: #cecece;
+    border-radius: var(--default-radius);
+    height: 219px;
+    width: inherit;
+}
+
+.swiper-slide__title {
+    color: var(--primary-color);
+    font-family: var(--rajdhani-font);
+    font-size: 19px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.swiper-slide__title:hover {
+    text-decoration: underline;
 }
 
 /**
@@ -390,6 +428,18 @@ body {
         width: 255px;
     }
 
+    .featured {
+        padding: 0 10px 0 10px;
+    }
+
+    .swiper-slide {
+        width: 140px;
+    }
+
+    .swiper-slide__cover {
+        height: 210px;
+    }
+
     .footer__container {
         padding: 0 10px 0 10px;
     }
@@ -419,6 +469,22 @@ body {
         justify-content: end;
     }
 
+    .featured {
+        padding: 0 20px 0 20px;
+    }
+
+    .swiper-slide {
+        width: 167px;
+    }
+
+    .swiper-slide__cover {
+        height: 251px;
+    }
+
+    .swiper-slide__title {
+        font-size: 21px;
+    }
+
     .nav__menu {
         display: none;
     }
@@ -445,8 +511,38 @@ body {
         display: block;
     }
 
+    .featured {
+        padding: 0 30px 0 30px;
+    }
+
+    .swiper-slide {
+        width: 177px;
+    }
+
+    .swiper-slide__cover {
+        height: 266px;
+    }
+
+    .swiper-slide__title {
+        font-size: 22px;
+    }
+
     .footer__container {
         padding: 0 30px 0 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .swiper-slide {
+        width: 173px;
+    }
+
+    .swiper-slide__cover {
+        height: 260px;
+    }
+
+    .swiper-slide__title {
+        font-size: 21px;
     }
 }
 
