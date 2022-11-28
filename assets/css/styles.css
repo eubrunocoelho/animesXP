@@ -293,6 +293,96 @@ body {
 */
 
 /**
+* Wrapper #start
+*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 0 8px 0 8px;
+    width: 100%;
+    margin: 50px auto 0;
+}
+
+/**
+* Cards #start (!)
+*/
+
+.cards {
+    flex: 0;
+}
+
+.cards__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.episode__card {
+    background: #eee;
+    border-radius: var(--default-radius);
+    width: 100%;
+}
+
+.episode__thumbnail-box {
+    height: auto;
+}
+
+.episode__thumbnail-img {
+    border-radius: 4px 7px 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.episode__info {
+    padding: 10px 8px 12px 8px; 
+}
+
+.episode__title {
+    color: var(--primary-color);
+    font-size: 15px;
+    font-family: var(--rajdhani-font);
+    font-weight: 700;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.episode__title:hover {
+    text-decoration: underline;
+}
+
+.episode__current {
+    color: var(--primary-color);
+    font-size: 11px;
+    font-family: var(--roboto-condensed);
+    margin: 5px 0 0 0;
+}
+
+/**
+* Cards #end
+*/
+
+/**
+* Aside #start
+*/
+
+.aside {
+    flex-basis: 0;
+    width: 100%;
+    background: #cecece;
+}
+
+/**
+* Aside #end
+*/
+
+/**
+* Wrapper #end
+*/
+
+/**
 * Main #end
 */
 
@@ -440,6 +530,28 @@ body {
         height: 210px;
     }
 
+    .wrapper {
+        padding: 0 10px 0 10px;
+    }
+
+    .cards__container {
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    
+    .episode__info {
+        padding: 18px 12px 12px 12px;
+    }
+
+    .episode__title {
+        font-size: 21px;
+    }
+
+    .episode__current {
+        font-size: 13px;
+        margin: 10px 0 0 0;
+    }
+
     .footer__container {
         padding: 0 10px 0 10px;
     }
@@ -469,8 +581,21 @@ body {
         justify-content: end;
     }
 
+    .nav__menu {
+        display: none;
+    }
+
     .featured {
         padding: 0 20px 0 20px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .cards {
+        flex: 1;
     }
 
     .swiper-slide {
@@ -485,8 +610,8 @@ body {
         font-size: 21px;
     }
 
-    .nav__menu {
-        display: none;
+    .aside {
+        flex-basis: 300px;
     }
 
     .footer__container {
