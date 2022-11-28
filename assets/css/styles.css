@@ -230,10 +230,10 @@ body {
 }
 
 .section__title {
+    color: var(--primary-color);
     font-family: var(--rajdhani-font);
     font-size: 27px;
     font-weight: 700;
-    color: var(--primary-color);
     margin: 0 0 20px 0;
 }
 
@@ -246,10 +246,10 @@ body {
 */
 
 .featured {
-    max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
+    max-width: 1200px;
     padding: 0 8px 0 8px;
+    width: 100%;
 }
 
 /**
