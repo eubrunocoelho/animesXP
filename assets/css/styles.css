@@ -316,7 +316,7 @@ body {
 .cards__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 15px;
     row-gap: 20px;
 }
 
@@ -337,7 +337,7 @@ body {
 }
 
 .episode__info {
-    padding: 10px 8px 12px 8px; 
+    padding: 10px 8px 12px 8px;
 }
 
 .episode__title {
@@ -371,7 +371,7 @@ body {
 .aside {
     flex-basis: 0;
     width: 100%;
-    background: #cecece;
+    background: #eee;
 }
 
 /**
@@ -508,6 +508,12 @@ body {
     }
 }
 
+@media screen and (min-width: 420px) {
+    .cards__container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (min-width: 480px) {
     .header__container {
         padding: 0 10px 0 10px;
@@ -534,24 +540,6 @@ body {
         padding: 0 10px 0 10px;
     }
 
-    .cards__container {
-        column-gap: 20px;
-        row-gap: 30px;
-    }
-    
-    .episode__info {
-        padding: 18px 12px 12px 12px;
-    }
-
-    .episode__title {
-        font-size: 21px;
-    }
-
-    .episode__current {
-        font-size: 13px;
-        margin: 10px 0 0 0;
-    }
-
     .footer__container {
         padding: 0 10px 0 10px;
     }
@@ -566,6 +554,40 @@ body {
 
     .footer__socials {
         display: block;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .episode__info {
+        padding: 12px 10px 12px 10px;
+    }
+}
+
+@media screen and (min-width: 592px) {
+    .episode__title {
+        font-size: 18px;
+    }
+
+    .episode__current {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .cards__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .episode__info {
+        padding: 10px 8px 12px 8px;
+    }
+
+    .episode__title {
+        font-size: 15px;
+    }
+
+    .episode__current {
+        font-size: 11px;
     }
 }
 
@@ -592,10 +614,23 @@ body {
     .wrapper {
         flex-direction: row;
         gap: 30px;
+        padding: 0 20px 0 20px;
     }
 
     .cards {
         flex: 1;
+    }
+
+    .cards__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .episode__title {
+        font-size: 17px;
+    }
+
+    .episode__current {
+        font-size: 13px;
     }
 
     .swiper-slide {
@@ -616,6 +651,30 @@ body {
 
     .footer__container {
         padding: 0 20px 0 20px;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .cards__container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .episode__title {
+        font-size: 15px;
+    }
+
+    .episode__current {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 894px) {
+    .episode__title {
+        font-size: 17px;
+    }
+
+    .episode__current {
+        font-size: 13px;
     }
 }
 
@@ -652,8 +711,30 @@ body {
         font-size: 22px;
     }
 
+    .wrapper {
+        padding: 0 30px 0 30px;
+    }
+
     .footer__container {
         padding: 0 30px 0 30px;
+    }
+}
+
+@media screen and (min-width: 1042px) {
+    .cards__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .episode__info {
+        padding: 11px 10px 11px 10px;
+    }
+
+    .episode__title {
+        font-size: 16px;
+    }
+
+    .episode__current {
+        font-size: 12px;
     }
 }
 
