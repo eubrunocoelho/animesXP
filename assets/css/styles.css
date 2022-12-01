@@ -7,6 +7,7 @@
     --rajdhani-font: 'Rajdhani', sans-serif;
     --primary-color: #0babfc;
     --secondary-color: #232323;
+    --background-color: #eee;
     --discord-color: #5865f2;
     --facebook-color: #139cf7;
     --twitter-color: #1d9bf0;
@@ -71,6 +72,29 @@ body {
 
 /**
 * Base #end
+*/
+
+/**
+* Components #start
+*/
+
+.button {
+    line-height: 0;
+    text-align: center;
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: var(--default-radius);
+    background: var(--primary-color);
+    font-family: var(--rajdhani-font);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+}
+
+/**
+* Components #end
 */
 
 /**
@@ -311,6 +335,7 @@ body {
 
 .cards {
     flex: 0;
+    margin: 0 0 40px 0;
 }
 
 .cards__container {
@@ -321,7 +346,7 @@ body {
 }
 
 .episode__card {
-    background: #eee;
+    background: var(--background-color);
     border-radius: var(--default-radius);
     width: 100%;
 }
@@ -358,6 +383,7 @@ body {
     font-size: 11px;
     font-family: var(--roboto-condensed);
     margin: 5px 0 0 0;
+    word-break: break-word;
 }
 
 /**
@@ -371,11 +397,60 @@ body {
 .aside {
     flex-basis: 0;
     width: 100%;
-    background: #eee;
+}
+
+.aside__title {
+    color: var(--primary-color);
+    font-family: var(--rajdhani-font);
+    font-size: 27px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.aside__box {
+    background: var(--background-color);
+    border-radius: var(--default-radius);
+    padding: 28px 20px 30px 20px;
 }
 
 /**
 * Aside #end
+*/
+
+/**
+* Genres #start (!)
+*/
+
+.genres__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.genres__item {
+    font-family: var(--rajdhani-font);
+    font-weight: 700;
+}
+
+.genres__link {
+    border-radius: var(--default-radius);
+    padding: 0 8px 0 8px;
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 36px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+}
+
+.genres__link:hover{
+    background: #fff;
+}
+
+/**
+* Genres #end (!)
 */
 
 /**
@@ -619,6 +694,7 @@ body {
 
     .cards {
         flex: 1;
+        margin: 0 0 0 0;
     }
 
     .cards__container {
