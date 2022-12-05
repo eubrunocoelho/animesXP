@@ -79,18 +79,18 @@ body {
 */
 
 .button {
+    background: var(--primary-color);
+    border: none;
+    border-radius: var(--default-radius);
+    color: #fff;
+    font-family: var(--rajdhani-font);
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
     line-height: 0;
+    margin: 20px 0 0 0;
     text-align: center;
     width: 100%;
-    border: none;
-    height: 40px;
-    border-radius: var(--default-radius);
-    background: var(--primary-color);
-    font-family: var(--rajdhani-font);
-    color: #fff;
-    font-weight: 700;
-    font-size: 16px;
-    margin: 20px 0 0 0;
 }
 
 /**
@@ -297,6 +297,10 @@ body {
     width: inherit;
 }
 
+.swiper-slide__cover:hover {
+    opacity: .92;
+}
+
 .swiper-slide__title {
     color: var(--primary-color);
     font-family: var(--rajdhani-font);
@@ -323,14 +327,14 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
+    margin: 50px auto 0;
     max-width: 1200px;
     padding: 0 8px 0 8px;
     width: 100%;
-    margin: 50px auto 0;
 }
 
 /**
-* Cards #start (!)
+* Cards #start
 */
 
 .cards {
@@ -339,9 +343,9 @@ body {
 }
 
 .cards__container {
+    column-gap: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
     row-gap: 20px;
 }
 
@@ -353,12 +357,54 @@ body {
 
 .episode__thumbnail-box {
     height: auto;
+    position: relative;
+}
+
+.episode__thumbnail-box:hover {
+    opacity: .92;
 }
 
 .episode__thumbnail-img {
     border-radius: 4px 7px 0 0;
     height: 100%;
     width: 100%;
+}
+
+.episode__thumbnail-box:hover .play__circle {
+    display: flex;
+}
+
+.play__circle {
+    align-items: center;
+    display: none;
+    height: 40px;
+    justify-content: center;
+    left: calc(50% - 20px);
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+}
+
+.play__icon {
+    color: rgba(11, 171, 252, .68);
+    font-size: 37px;
+}
+
+.episode__language-box {
+    align-items: center;
+    background: var(--primary-color);
+    bottom: 6px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: center;
+    left: 4px;
+    padding: 4px 5px 4px 5px;
+    position: absolute;
 }
 
 .episode__info {
@@ -418,13 +464,13 @@ body {
 */
 
 /**
-* Genres #start (!)
+* Genres #start
 */
 
 .genres__list {
+    column-gap: 10px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
     row-gap: 10px;
 }
 
@@ -434,23 +480,23 @@ body {
 }
 
 .genres__link {
-    border-radius: var(--default-radius);
-    padding: 0 8px 0 8px;
-    color: var(--primary-color);
-    text-decoration: none;
-    height: 36px;
-    width: 80px;
-    display: flex;
     align-items: center;
+    border-radius: var(--default-radius);
+    color: var(--primary-color);
+    display: flex;
+    height: 36px;
+    padding: 0 8px 0 8px;
+    text-decoration: none;
+    width: 80px;
     word-break: break-word;
 }
 
-.genres__link:hover{
+.genres__link:hover {
     background: #fff;
 }
 
 /**
-* Genres #end (!)
+* Genres #end
 */
 
 /**
