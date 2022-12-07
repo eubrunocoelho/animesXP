@@ -101,20 +101,24 @@ body {
 * Side-nav #start
 */
 
-.sidenav {
+.sidenav__background {
     background: rgba(46, 46, 46, .58);
     height: 100%;
     position: fixed;
+    display: none;
     width: 100%;
     z-index: 9999;
 }
 
-.sidenav__content {
+.sidenav {
     background: var(--secondary-color);
     box-shadow: 2px 0px 2.97px 0.03px rgba(0, 0, 0, 0.22);
     height: 100vh;
     overflow: auto;
-    width: 290px;
+    overflow-x: hidden;
+    /* width: 290px; */
+    width: 0;
+    transition: .2s;
 }
 
 /**
@@ -168,7 +172,6 @@ body {
     transform: rotate(90deg);
     z-index: 2;
 }
-
 
 /**
 * Side-nav #nav
