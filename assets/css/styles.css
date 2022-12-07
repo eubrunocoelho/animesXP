@@ -101,7 +101,7 @@ body {
 * Side-nav #start
 */
 
-.sidenav__background {
+.window-overlay {
     background: rgba(46, 46, 46, .58);
     height: 100%;
     position: fixed;
@@ -111,14 +111,14 @@ body {
 }
 
 .sidenav {
+    position: absolute;
+    left: -290px;
     background: var(--secondary-color);
     box-shadow: 2px 0px 2.97px 0.03px rgba(0, 0, 0, 0.22);
     height: 100vh;
     overflow: auto;
-    overflow-x: hidden;
-    /* width: 290px; */
-    width: 0;
-    transition: .2s;
+    width: 290px;
+    transition: .5s;
 }
 
 /**
