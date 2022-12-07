@@ -35,3 +35,39 @@ var closeSidenav = () => {
         windowOverlay.style.display = 'none';
     }, 200);
 }
+
+/**
+ * =======================================================
+ */
+
+const genreLoadMoreBtn = document.querySelector('#load-more')
+
+var displayItems = 15;
+var genresItem = document.querySelectorAll('.genres__item');
+
+for (var i = 0; i < displayItems; i++) {
+    genresItem[i].style.display = 'block';
+}
+
+genreLoadMoreBtn.addEventListener('click', () => {
+    var visible = document.querySelectorAll('.genres__item');
+    var count = 0;
+
+    for (var i = 0; i < visible.length; i++) { 
+        if (visible[i].style.display != 'block') {
+            visible[i].style.display = 'block';
+        }
+    }
+
+    count = 0;
+
+    for (var i = 0; i < visible.length; i++) {
+        if (visible[i].style.display != 'none') {
+            count++;
+        }
+    }
+    
+    if (count == visible.length) {
+        genreLoadMoreBtn.outerHTML = '';
+    }
+});

@@ -640,6 +640,7 @@ body {
 .genres__item {
     font-family: var(--rajdhani-font);
     font-weight: 700;
+    display: none;
 }
 
 .genres__link {
@@ -650,12 +651,14 @@ body {
     height: 36px;
     padding: 0 8px 0 8px;
     text-decoration: none;
-    width: 80px;
+    width: max-content;
     word-break: break-word;
+    background: #fff;
 }
 
 .genres__link:hover {
-    background: #fff;
+    background: var(--primary-color);
+    color: #fff !important;
 }
 
 /**
