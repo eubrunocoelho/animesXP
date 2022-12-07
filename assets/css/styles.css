@@ -98,6 +98,141 @@ body {
 */
 
 /**
+* Side-nav #start (!)
+*/
+
+.sidenav {
+    background: rgba(46, 46, 46, .58);
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+}
+
+.sidenav__content {
+    width: 290px;
+    height: 100vh;
+    background: var(--secondary-color);
+    overflow: auto;
+    box-shadow: 2px 0px 2.97px 0.03px rgba(0, 0, 0, 0.22);
+}
+
+.sidenav__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding: 0 20px 0 20px;
+}
+
+.sidenav__logo {
+    background: url(../img/logo/logo-mini.png) center no-repeat;
+    height: 60px;
+    width: 182px;
+    text-indent: -9999px;
+}
+
+.sidenav__close-button {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+    cursor: pointer;
+}
+
+.close-button__line {
+    background: var(--primary-color);
+    border-radius: 2px;
+    height: 28px;
+    transform: rotate(45deg);
+    width: 4px;
+    z-index: 1;
+}
+
+.sidenav__close-button .close-button__line>.close-button__line {
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.sidenav__nav {
+    margin: 10px 0 90px 0;
+    padding: 0 20px 0 20px;
+}
+
+.sidenav__menu {
+    margin: 0 0 20px 0;
+}
+
+.sidenav-menu__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav-menu__item {
+    padding: 17px 0 17px 0;
+    font-family: var(--rajdhani-font);
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+}
+
+.sidenav-menu__link {
+    padding: 0 0 0 16px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sidenav-menu__link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.sidenav__search {
+    position: relative;
+}
+
+.sidenav-search__input {
+    background: #2f2f2f;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    outline: none;
+    padding: 0 55px 0 15px;
+    width: 100%;
+}
+
+.sidenav-search__input::placeholder {
+    color: rgba(255, 255, 255, .88);
+}
+
+.sidenav-search__button {
+    background: #000;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    height: 40px;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    width: 40px;
+}
+
+.sidenav-search__icon {
+    color: var(--primary-color);
+    font-size: 26px;
+}
+
+/**
+* Side-nav #end
+*/
+
+/**
 * Header #start
 */
 
