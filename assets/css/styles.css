@@ -541,7 +541,7 @@ body {
 }
 
 .letters-box {
-    padding: 10px 0 10px 0;
+    padding: 10px 14px 10px 14px;
     background: #eee;
     border-radius: var(--default-radius);
 }
@@ -693,6 +693,19 @@ body {
 
 /**
 * Cards #end
+*/
+
+/**
+* Anime-list #start
+*/
+
+.anime-list {
+    flex: 0;
+    margin: 0 0 40px 0;
+}
+
+/**
+* Anime-list #end
 */
 
 /**
