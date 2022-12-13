@@ -1220,12 +1220,12 @@ body {
         padding: 0 10px 0 10px;
     }
 
-    .anime-list__item {
-        padding: 28px 30px 28px 30px;
-    }
-
     .wrapper {
         padding: 0 10px 0 10px;
+    }
+
+    .anime-list__item {
+        padding: 28px 30px 28px 30px;
     }
 
     .footer__container {
@@ -1303,6 +1303,18 @@ body {
         padding: 0 20px 0 20px;
     }
 
+    .swiper-slide {
+        width: 167px;
+    }
+
+    .swiper-slide__cover {
+        height: 251px;
+    }
+
+    .swiper-slide__title {
+        font-size: 21px;
+    }
+
     .letters {
         padding: 0 20px 0 20px;
     }
@@ -1337,18 +1349,6 @@ body {
     .anime-list {
         flex: 1;
         margin: 0 0 0 0;
-    }
-
-    .swiper-slide {
-        width: 167px;
-    }
-
-    .swiper-slide__cover {
-        height: 251px;
-    }
-
-    .swiper-slide__title {
-        font-size: 21px;
     }
 
     .aside {
