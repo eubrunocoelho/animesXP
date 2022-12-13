@@ -209,14 +209,14 @@ body {
 
 .sidenav-menu__item {
     border-bottom: 1px solid #000;
-    font-family: var(--rajdhani-font);
-    font-weight: 500;
     padding: 17px 0 17px 0;
 }
 
 .sidenav-menu__link {
     color: #fff;
+    font-family: var(--rajdhani-font);
     font-size: 18px;
+    font-weight: 500;
     padding: 0 0 0 16px;
     text-decoration: none;
 }
@@ -350,14 +350,11 @@ body {
     gap: 30px;
 }
 
-.header-menu__item {
-    font-family: var(--rajdhani-font);
-    font-weight: 500;
-}
-
 .header-menu__link {
     color: #fff;
+    font-family: var(--rajdhani-font);
     font-size: 22px;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -560,17 +557,14 @@ body {
     justify-content: center;
 }
 
-.letters-box__item {
-    font-family: var(--rajdhani-font);
-    font-size: 14px;
-    font-weight: 700;
-}
-
 .letters-box__link {
     align-items: center;
     border-radius: var(--default-radius);
     color: var(--primary-color);
     display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 700;
     height: 30px;
     justify-content: center;
     text-decoration: none;
@@ -738,7 +732,6 @@ body {
 
 .anime-list__summary {
     flex: 1;
-    height: 40px;
     width: 100%;
 }
 
@@ -879,9 +872,6 @@ body {
 
 .genres__item {
     display: none;
-    font-family: var(--rajdhani-font);
-    font-weight: 700;
-    font-size: 14px;
 }
 
 .genres__link {
@@ -889,6 +879,9 @@ body {
     border-radius: var(--default-radius);
     color: var(--primary-color);
     display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 700;
     height: 36px;
     padding: 0 8px 0 8px;
     text-decoration: none;
