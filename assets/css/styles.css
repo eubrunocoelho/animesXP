@@ -47,6 +47,14 @@
     border: 2px solid rgba(11, 171, 252, .35);
 }
 
+.box--false {
+    color: #888 !important;
+}
+
+.box--false:hover {
+    background: none !important;
+}
+
 /**
 * Modifiers #end
 */
@@ -546,11 +554,10 @@ body {
 }
 
 .letters-box__list {
-    column-gap: 10px;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-    row-gap: 10px;
 }
 
 .letters-box__item {
@@ -783,6 +790,52 @@ body {
 
 /**
 * Anime-list #end
+*/
+
+/**
+* Pagination #start
+*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination__container {
+    background: #eee;
+    border-radius: var(--default-radius);
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: max-content;
+}
+
+.pagination__list {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination__link {
+    align-items: center;
+    border-radius: var(--default-radius);
+    color: var(--primary-color);
+    display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    text-decoration: none;
+    width: 30px;
+}
+
+.pagination__link:hover {
+    background: #fff;
+}
+
+/**
+* Pagination #end
 */
 
 /**
@@ -1287,7 +1340,7 @@ body {
     .filter {
         margin: 0 0 0 0;
     }
-    
+
     .anime-list {
         flex: 1;
         margin: 0 0 0 0;
