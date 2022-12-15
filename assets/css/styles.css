@@ -55,6 +55,10 @@
     background: none !important;
 }
 
+.text--active {
+    color: var(--primary-color) !important;
+}
+
 .mt--none {
     margin-top: 0 !important;
 }
@@ -909,7 +913,7 @@ body {
 .aside__box {
     background: var(--background-color);
     border-radius: var(--default-radius);
-    padding: 28px 20px 30px 20px;
+    padding: 28px 10px 30px 10px;
 }
 
 /**
@@ -1011,15 +1015,21 @@ body {
 }
 
 .filter-nav__item {
+    color: #8e8e8e;
     margin: 13px 0 0 0;
+    font-family: var(--rajdhani-font);
+    font-weight: 700;
+    font-size: 19px;
 }
 
 .filter-nav__link {
     color: #8e8e8e;
-    font-family: var(--rajdhani-font);
-    font-weight: 700;
-    font-size: 19px;
     text-decoration: none;
+}
+
+.filter-nav__link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /**
@@ -1303,8 +1313,16 @@ body {
         padding: 0 10px 0 10px;
     }
 
+    .aside__box {
+        padding: 28px 20px 30px 20px;
+    }
+
     .anime-list__item {
-        padding: 28px 30px 28px 30px;
+        padding: 28px 20px 30px 20px;
+    }
+    
+    .search-box {
+        padding: 28px 20px 30px 20px;
     }
 
     .footer__container {

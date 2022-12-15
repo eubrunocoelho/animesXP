@@ -33,7 +33,7 @@
                             <a href="./index.html" class="sidenav-menu__link">Home</a>
                         </li>
                         <li class="sidenav-menu__item">
-                            <a href="./anime-list.html" class="sidenav-menu__link">Anime</a>
+                            <a href="./anime-list.html" class="sidenav-menu__link">Animes</a>
                         </li>
                         <li class="sidenav-menu__item">
                             <a href="./anime-list.html" class="sidenav-menu__link">Cartoons</a>
@@ -43,7 +43,7 @@
                         </li>
                     </ul>
                 </div>
-                <form action="#" class="sidenav__search">
+                <form action="./search-result.html" class="sidenav__search">
                     <input type="text" class="sidenav-search__input" placeholder="Pesquisar...">
                     <button class="sidenav-search__button">
                         <ion-icon name="search" class="sidenav-search__icon"></ion-icon>
@@ -79,7 +79,7 @@
                         </li>
                     </ul>
                 </div>
-                <form action="#" class="header__search">
+                <form action="./search-result.html" class="header__search">
                     <input type="text" class="header-search__input" placeholder="Pesquisar...">
                     <button type="submit" class="header-search__button">
                         <ion-icon name="search" class="header-search__icon"></ion-icon>
@@ -109,19 +109,19 @@
                         <nav class="filter__nav">
                             <ul class="filter-nav__list">
                                 <li class="filter-nav__item">
-                                    <a href="#" class="filter-nav__link">ANIME (1)</a>
+                                    <p><a href="#" class="filter-nav__link">ANIME</a> <span class="text--active">(1)</p>
                                 </li>
                                 <li class="filter-nav__item">
-                                    <a href="#" class="filter-nav__link">FILME</a>
+                                    <p>FILME</a>
                                 </li>
                                 <li class="filter-nav__item">
-                                    <a href="#" class="filter-nav__link">DORAMA</a>
+                                    <p>DORAMA</p>
                                 </li>
                                 <li class="filter-nav__item">
-                                    <a href="#" class="filter-nav__link">CARTOON</a>
+                                    <p>CARTOON</p>
                                 </li>
                                 <li class="filter-nav__item">
-                                    <a href="#" class="filter-nav__link">LIVE ACTION</a>
+                                    <p>LIVE ACTION</p>
                                 </li>
                             </ul>
                         </nav>
@@ -134,10 +134,10 @@
                         <nav class="filter__nav">
                             <ul class="filter-nav__list">
                                 <li class="filter-nav__item">
-                                    <a href="#" class="filter-nav__link">LEGENDADO (1)</a>
+                                    <p><a href="#" class="filter-nav__link">LEGENDADO</a> <span class="text--active">(1)</span></p>
                                 </li>
                                 <li class="filter-nav__item">
-                                    <a href="#" class="filter-nav__link">DUBLADO</a>
+                                    <p>DUBLADO</p>
                                 </li>
                             </ul>
                         </nav>
@@ -147,13 +147,56 @@
             <section class="section anime__list">
                 <h1 class="section__title">#PESQUISA</h1>
                 <div class="search-box">
-                    <form action="#" class="search-box__form">
+                    <form action="./search-result.html" class="search-box__form">
                         <input type="text" class="search-box__input" value="Tower Of God">
                         <button type="submit" class="search-box__button">
                             <ion-icon name="search" class="search-box__icon"></ion-icon>
                         </button>
                     </form>
                 </div>
+                <div class="anime-list__item">
+                    <div class="anime-list__cover">
+                        <a href="#">
+                            <img src="../animesXP/assets/img/covers/tower-of-god.jpg" class="anime-list__img">
+                        </a>
+                    </div>
+                    <div class="anime-list__summary">
+                        <a href="#" class="summary__title">Tower Of God</a>
+                        <span class="summary__language-box">LEGENDADO</span>
+                        <ul class="summary-genres__list">
+                            <li class="summary-genres__item">
+                                <a href="#" class="summary-genres__link">AÇÃO</a>
+                            </li>
+                            <li class="summary-genres__item">
+                                <a href="#" class="summary-genres__link">AVENTURA</a>
+                            </li>
+                            <li class="summary-genres__item">
+                                <a href="#" class="summary-genres__link">DRAMA</a>
+                            </li>
+                            <li class="summary-genres__item">
+                                <a href="#" class="summary-genres__link">FANTASIA</a>
+                            </li>
+                            <li class="summary-genres__item">
+                                <a href="#" class="summary-genres__link">MISTÉRIO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="pagination">
+                    <div class="pagination__container">
+                        <ul class="pagination__list">
+                            <li class="pagination__item">
+                                <span class="pagination__link box--false">«<span>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link box--active">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <span href="#" class="pagination__link box--false">»</span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </section>
         </div>
         <!-- end wrapper -->
@@ -180,7 +223,7 @@
                 </div>
             </div>
             <div class="footer__copy">
-                <p class="copy__text"><a href="./index.html" class="copy__link">AnimesXP</a> © 2022 - Made by: <a href="https://linktr.ee/eubrunocoelho" class="copy__link">Bruno Coelho</a></p>
+                <p class="copy__text"><a href="./index.html" class="copy__link">AnimesXP</a> © 2022 - Made by: <a href="https://linktr.ee/eubrunocoelho" class="copy__link" target="_blank">Bruno Coelho</a></p>
             </div>
         </div>
     </footer>
