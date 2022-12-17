@@ -63,6 +63,10 @@
     margin-top: 0 !important;
 }
 
+.w--max-content {
+    width: max-content;
+}
+
 /**
 * Modifiers #end
 */
@@ -541,6 +545,62 @@ body {
 
 /**
 * Featured #end
+*/
+
+/**
+* Single-anime #start (!important)
+*/
+
+.single-anime {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 8px 0 8px;
+}
+
+.anime__summary {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    border-radius: var(--default-radius);
+    padding: 28px 10px 28px 10px;
+    width: 100%;
+}
+
+.anime-summary__cover {
+    display: flex;
+    justify-content: center;
+}
+
+.anime-summary__img {
+    border-radius: var(--default-radius);
+    background: #cecece;
+    height: 353px;
+    width: 235px;
+}
+
+.anime-summary__title {
+    font-family: var(--rajdhani-font);
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 18px 0 10px 0;
+}
+
+.anime-summary__synopsis {
+    width: 100%;
+    margin: 16px 0 0 0;
+}
+
+.synopsis__text {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--roboto-condensed);
+    color: #8e8e8e;
+    text-align: justify;
+}
+
+/**
+* Single-anime #end
 */
 
 /**
