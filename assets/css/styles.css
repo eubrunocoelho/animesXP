@@ -557,46 +557,36 @@ body {
     padding: 0 8px 0 8px;
 }
 
-.anime__summary {
-    display: flex;
-    flex-direction: column;
-    background: #eee;
-    border-radius: var(--default-radius);
-    padding: 28px 10px 28px 10px;
+.anime-summary {
+    display: grid;
+    grid-template-columns: 100px calc(100% - 100px);
+    grid-template-areas: 'capa info' 'capa synopsis';
     width: 100%;
+    background: pink;
 }
 
 .anime-summary__cover {
     display: flex;
-    justify-content: center;
+    grid-area: capa;
+    width: 190px;
+    height: 285px;
+    background: blue;
 }
 
-.anime-summary__img {
-    border-radius: var(--default-radius);
-    background: #cecece;
-    height: 353px;
-    width: 235px;
-}
-
-.anime-summary__title {
-    font-family: var(--rajdhani-font);
-    font-size: 27px;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin: 18px 0 10px 0;
+.anime-summary__info {
+    display: flex;
+    grid-area: info;
+    width: 100%;
+    height: 200px;
+    background: aqua;
 }
 
 .anime-summary__synopsis {
+    display: flex;
+    grid-area: synopsis;
+    height: 100px;
     width: 100%;
-    margin: 16px 0 0 0;
-}
-
-.synopsis__text {
-    font-weight: 400;
-    font-size: 14px;
-    font-family: var(--roboto-condensed);
-    color: #8e8e8e;
-    text-align: justify;
+    background: yellow;
 }
 
 /**
@@ -1380,7 +1370,7 @@ body {
     .anime-list__item {
         padding: 28px 20px 30px 20px;
     }
-    
+
     .search-box {
         padding: 28px 20px 30px 20px;
     }
