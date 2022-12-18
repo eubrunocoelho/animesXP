@@ -567,7 +567,7 @@ body {
     display: grid;
     grid-template-areas: 'summary-cover' 'summary-info' 'summary-synopsis';
     padding: 28px 10px 28px 10px;
-    row-gap: 10px;
+    row-gap: 16px;
 }
 
 .anime-summary__cover {
@@ -613,22 +613,21 @@ body {
     width: 100%;
 }
 
-/**/
-
 .anime-datasheet {
     background: #eee;
     border-radius: var(--default-radius);
+    display: none;
     margin: 30px 0 0 0;
     padding: 28px 20px 28px 20px;
 }
 
 .datasheet__table {
-    width: 100%;
-    border-top: 1px solid #cacaca;
     border-bottom: 1px solid #cacaca;
+    border-top: 1px solid #cacaca;
     font-family: var(--rajdhani-font);
-    font-weight: 700;
     font-size: 16px;
+    font-weight: 700;
+    width: 100%;
 }
 
 .datasheet__tr {
@@ -674,10 +673,10 @@ body {
 }
 
 .anime-episodes__item {
-    display: flex;
     align-items: center;
-    padding: 20px 0 20px 0;
     border-bottom: 1px solid #cacaca;
+    display: flex;
+    padding: 20px 0 20px 0;
 }
 
 .anime-episodes__item:first-child {
@@ -685,14 +684,14 @@ body {
 }
 
 .anime-episodes__item:last-child {
-    padding: 20px 0 0 0;
     border-bottom: none;
+    padding: 20px 0 0 0;
 }
 
 .anime-episodes__thumbnail {
-    width: 106px;
     height: 60px;
     margin: 0 20px 0 0;
+    width: 106px;
 }
 
 .anime-episodes__thumbnail:hover {
@@ -700,25 +699,25 @@ body {
 }
 
 .anime-episodes__img {
-    width: 100%;
     background: #cecece;
-    height: 60px;
     border-radius: var(--default-radius);
+    height: 60px;
+    width: 100%;
 }
 
 .anime-episodes__division {
-    height: 40px;
-    width: 1px;
     background: #cacaca;
     display: block;
+    height: 40px;
     margin: 0 20px 0 0;
+    width: 1px;
 }
 
 .anime-episodes__title {
+    color: var(--primary-color);
     font-family: var(--rajdhani-font);
     font-size: 17px;
     font-weight: 700;
-    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -732,11 +731,31 @@ body {
 }
 
 .anime-episodes__date {
-    font-family: var(--roboto-condensed);
-    font-weight: 400;
-    font-size: 11px;
-    margin: 3px 0 0 0;
     color: #8e8e8e;
+    font-family: var(--roboto-condensed);
+    font-size: 11px;
+    font-weight: 400;
+    margin: 3px 0 0 0;
+}
+
+.anime-episodes__episode {
+    align-items: center;
+    display: none;
+    justify-content: center;
+    margin: 0 20px 0 0;
+    width: 60px;
+}
+
+.episode__link {
+    color: var(--primary-color);
+    font-family: var(--rajdhani-font);
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.episode__link:hover {
+    text-decoration: underline;
 }
 
 /**
@@ -1512,28 +1531,40 @@ body {
     .swiper-slide__cover {
         height: 210px;
     }
-    
+
     .single-anime {
         padding: 0 10px 0 10px;
     }
 
     .anime-summary {
         column-gap: 18px;
-        grid-template-columns: 134px auto;
         grid-template-areas: 'summary-cover summary-info' 'summary-synopsis summary-synopsis';
+        grid-template-columns: 134px auto;
         padding: 28px 20px 28px 20px;
     }
 
     .anime-summary__cover {
-        width: 134px;
         height: 201px;
+        width: 134px;
     }
 
     .anime-summary__img {
         height: 100%;
         width: 100%;
     }
-    
+
+    .episodes {
+        padding: 0 10px 0 10px;
+    }
+
+    .anime-episodes {
+        padding: 28px 20px 28px 20px;
+    }
+
+    .anime-episodes__episode {
+        display: flex;
+    }
+
     .letters {
         padding: 0 10px 0 10px;
     }
@@ -1647,14 +1678,14 @@ body {
 
     .anime-summary {
         column-gap: 22px;
+        grid-template-areas: 'summary-cover summary-info' 'summary-cover summary-synopsis';
         grid-template-columns: 189px auto;
         grid-template-rows: auto 1fr;
-        grid-template-areas: 'summary-cover summary-info' 'summary-cover summary-synopsis';
     }
 
     .anime-summary__cover {
-        width: 189px;
         height: 284px;
+        width: 189px;
     }
 
     .anime-summary__title {
@@ -1663,6 +1694,10 @@ body {
 
     .anime-datasheet {
         display: block;
+    }
+
+    .episodes {
+        padding: 0 20px 0 20px;
     }
 
     .letters {
@@ -1772,6 +1807,10 @@ body {
     }
 
     .single-anime {
+        padding: 0 30px 0 30px;
+    }
+
+    .episodes {
         padding: 0 30px 0 30px;
     }
 
