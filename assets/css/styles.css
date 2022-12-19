@@ -767,6 +767,65 @@ body {
 */
 
 /**
+* Contact #start (!important)
+*/
+
+.contact {
+    margin: 0 auto;
+    max-width: 510px;
+    padding: 0 8px 0 8px;
+}
+
+.contact-box {
+    background: #eee;
+    border-radius: var(--default-radius);
+    padding: 28px 10px 28px 10px;
+}
+
+.form-control__label {
+    font-family: var(--rajdhani-font);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.form-control__input {
+    height: 42px;
+    width: 100%;
+    border: 1px solid #cacaca;
+    border-radius: var(--default-radius);
+    font-family: var(--roboto-condensed);
+    font-size: 15px;
+    font-weight: 400;
+    color: #6e6e6e;
+    outline: none;
+    padding: 0 18px 0 18px;
+    margin: 0 0 18px 0;
+}
+
+.form-control__textarea {
+    height: 118px;
+    width: 100%;
+    border: 1px solid #cacaca;
+    border-radius: var(--default-radius);
+    font-family: var(--roboto-condensed);
+    font-size: 15px;
+    font-weight: 400;
+    color: #6e6e6e;
+    outline: none;
+    resize: none;
+    padding: 16px 18px 16px 18px;
+    margin: 0 0 18px 0;
+
+}
+
+/**
+* Contact #end
+*/
+
+/**
 * Letters-box #start
 */
 
