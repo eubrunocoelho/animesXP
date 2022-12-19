@@ -12,6 +12,12 @@
     --facebook-color: #139cf7;
     --twitter-color: #1d9bf0;
     --default-radius: 4px 7px 4px 7px;
+    --danger-border: #f5c6cb;
+    --danger-text: #9d1c24;
+    --danger-background: #f8d7da;
+    --success-border: #c3e6cb;
+    --success-text: #155724;
+    --success-background: #d4edda;
 }
 
 /**
@@ -71,6 +77,18 @@
     width: max-content;
 }
 
+.--danger {
+    background: var(--danger-background) !important;
+    border: 1px solid var(--danger-border) !important;
+    color: var(--danger-text) !important;
+}
+
+.--success {
+    background: var(--success-background) !important;
+    border: 1px solid var(--success-border) !important;
+    color: var(--success-text) !important;
+}
+
 /**
 * Modifiers #end
 */
@@ -119,6 +137,19 @@ body {
     line-height: 0;
     text-align: center;
     width: 100%;
+}
+
+.alert-message {
+    align-items: center;
+    border: 1px solid #cacaca;
+    border-radius: var(--default-radius);
+    display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    padding: 12px 10px 12px 10px;
 }
 
 /**
@@ -767,7 +798,7 @@ body {
 */
 
 /**
-* Contact #start (!important)
+* Contact #start
 */
 
 .contact {
@@ -783,42 +814,41 @@ body {
 }
 
 .form-control__label {
-    font-family: var(--rajdhani-font);
     color: var(--primary-color);
+    display: block;
+    font-family: var(--rajdhani-font);
     font-size: 16px;
     font-weight: 700;
-    display: block;
     margin: 0 0 10px 0;
 }
 
 .form-control__input {
-    height: 42px;
-    width: 100%;
     border: 1px solid #cacaca;
     border-radius: var(--default-radius);
+    color: #6e6e6e;
     font-family: var(--roboto-condensed);
     font-size: 15px;
     font-weight: 400;
-    color: #6e6e6e;
+    height: 42px;
+    margin: 0 0 18px 0;
     outline: none;
     padding: 0 18px 0 18px;
-    margin: 0 0 18px 0;
+    width: 100%;
 }
 
 .form-control__textarea {
-    height: 118px;
-    width: 100%;
     border: 1px solid #cacaca;
     border-radius: var(--default-radius);
+    color: #6e6e6e;
     font-family: var(--roboto-condensed);
     font-size: 15px;
     font-weight: 400;
-    color: #6e6e6e;
-    outline: none;
-    resize: none;
-    padding: 16px 18px 16px 18px;
+    height: 118px;
     margin: 0 0 18px 0;
-
+    outline: none;
+    padding: 16px 18px 16px 18px;
+    resize: none;
+    width: 100%;
 }
 
 /**
@@ -1622,6 +1652,14 @@ body {
 
     .anime-episodes__episode {
         display: flex;
+    }
+
+    .contact {
+        padding: 0 10px 0 10px;
+    }
+
+    .contact-box {
+        padding: 28px 20px 28px 20px;
     }
 
     .letters {
