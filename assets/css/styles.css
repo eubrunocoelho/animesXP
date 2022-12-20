@@ -798,6 +798,72 @@ body {
 */
 
 /**
+* Episode #start !important
+*/
+
+.episode {
+    flex: 0;
+}
+
+.episode-box {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    border-radius: var(--default-radius);
+    padding: 28px 10px 28px 10px;
+    width: 100%;
+}
+
+.episode-box__heading {
+    display: flex;
+    justify-content: center;
+}
+
+.episode-box__title {
+    font-family: var(--rajdhani-font);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+}
+
+.episode-box__player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 162px;
+    background: #cecece;
+    display: flex;
+}
+
+.episode-box__player-button {
+    font-size: 64px;
+    color: var(--primary-color);
+}
+
+.episode-box__guide {
+    margin: 8px 0 0 0;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.episode-box__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/**
+* Episode #end
+*/
+
+/**
 * Contact #start
 */
 
@@ -1654,6 +1720,14 @@ body {
         display: flex;
     }
 
+    .episode-box__title {
+        font-size: 22px;
+    }
+
+    .episode-box__player {
+        height: 238px;
+    }
+
     .contact {
         padding: 0 10px 0 10px;
     }
@@ -1795,6 +1869,12 @@ body {
 
     .episodes {
         padding: 0 20px 0 20px;
+    }
+
+    /**/
+
+    .episode {
+        flex: 1;
     }
 
     .letters {
