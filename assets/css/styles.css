@@ -903,8 +903,39 @@ body {
 }
 
 /**
-/* Anime-info #end
+* Anime-info #end
 */
+
+/*
+* Comments #start
+**/
+
+.comments-box {
+    background: #eee;
+    border-radius: var(--default-radius);
+    padding: 18px 10px 18px 10px;
+    width: 100%;
+}
+
+.comments-box__content {
+    background: #fff;
+    border-radius: var(--default-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px 12px 10px;
+}
+
+.comments-box__p {
+    font-family: var(--roboto-condensed);
+    color: #8e8e8e;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*
+* Comments #end
+**/
 
 /**
 * Episode #end
@@ -1861,6 +1892,10 @@ body {
     }
 
     .anime-info {
+        padding: 28px 20px 28px 20px;
+    }
+
+    .comments-box {
         padding: 28px 20px 28px 20px;
     }
 
