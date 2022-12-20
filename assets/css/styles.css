@@ -73,10 +73,6 @@
     margin-top: 40px !important;
 }
 
-.w--max-content {
-    width: max-content;
-}
-
 .--danger {
     background: var(--danger-background) !important;
     border: 1px solid var(--danger-border) !important;
@@ -811,6 +807,7 @@ body {
     background: #eee;
     border-radius: var(--default-radius);
     padding: 28px 10px 28px 10px;
+    margin: 0 0 30px 0;
     width: 100%;
 }
 
@@ -858,6 +855,56 @@ body {
     text-decoration: none;
     color: var(--primary-color);
 }
+
+/**
+/* Anime-info #start
+*/
+
+.anime-info {
+    background: #eee;
+    border-radius: var(--default-radius);
+    padding: 28px 10px 28px 10px;
+    display: flex;
+}
+
+.anime-info__cover {
+    display: none;
+    height: 149px;
+    width: 97px;
+    margin: 0 18px 0 0;
+}
+
+.anime-info__img {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--default-radius);
+    background: #cecece;
+}
+
+.anime-info__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: var(--rajdhani-font);
+    margin: 0 0 16px 0;
+}
+
+.anime-info__summary {
+    flex: 1;
+    width: 100%;
+}
+
+.anime-info__synopsis {
+    font-family: var(--roboto-condensed);
+    font-size: 14px;
+    font-weight: 400;
+    color: #8e8e8e;
+    text-align: justify;
+}
+
+/**
+/* Anime-info #end
+*/
 
 /**
 * Episode #end
@@ -1334,6 +1381,87 @@ body {
 */
 
 /**
+* Popular #start
+*/
+
+.popular {
+    display: none !important;
+}
+
+.popular-item {
+    align-items: center;
+    display: flex;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #cacaca;
+}
+
+.popular-item:first-child {
+    padding: 0 0 20px 0;
+}
+
+.popular-item:last-child {
+    padding: 20px 0 0 0;
+    border-bottom: none;
+}
+
+.popular-item__rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 44px;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-family: var(--rajdhani-font);
+    font-weight: 700;
+    margin: 0 10px 0 0;
+}
+
+.popular-item__cover {
+    height: 120px;
+    width: 80px;
+    margin: 0 10px 0 0;
+}
+
+.popular-item__img {
+    height: 100%;
+    background: #cecece;
+    border-radius: var(--default-radius);
+    width: 100%;
+}
+
+.popular-item__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.popular-item__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: var(--rajdhani-font);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.popular-item__title:hover {
+    text-decoration: underline;
+}
+
+.popular-item__description {
+    font-size: 12px;
+    color: #8e8e8e;
+    font-family: var(--roboto-condensed);
+    font-weight: 400;
+    margin: 6px 0 0 0;
+}
+
+/**
+* Popular #end
+*/
+
+/**
 * Search-box #start
 */
 
@@ -1720,12 +1848,20 @@ body {
         display: flex;
     }
 
+    .episode-box {
+        padding: 28px 20px 28px 20px;
+    }
+
     .episode-box__title {
         font-size: 22px;
     }
 
     .episode-box__player {
         height: 238px;
+    }
+
+    .anime-info {
+        padding: 28px 20px 28px 20px;
     }
 
     .contact {
@@ -1877,6 +2013,10 @@ body {
         flex: 1;
     }
 
+    .episode-box__player {
+        height: 202px;
+    }
+
     .letters {
         padding: 0 20px 0 20px;
     }
@@ -1910,6 +2050,10 @@ body {
 
     .filter {
         margin: 0 0 0 0;
+    }
+
+    .popular {
+        display: block !important;
     }
 
     .anime-list {
@@ -1991,6 +2135,18 @@ body {
         padding: 0 30px 0 30px;
     }
 
+    .episode-box__title {
+        font-size: 23px;
+    }
+
+    .episode-box__player {
+        height: 305px;
+    }
+
+    .anime-info__cover {
+        display: block;
+    }
+
     .letters {
         padding: 0 30px 0 30px;
     }
@@ -2033,6 +2189,14 @@ body {
 
     .swiper-slide__title {
         font-size: 21px;
+    }
+
+    .episode-box__player {
+        height: 435px;
+    }
+
+    .episode-box__title {
+        font-size: 25px;
     }
 }
 
