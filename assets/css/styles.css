@@ -89,6 +89,14 @@
     color: var(--success-text) !important;
 }
 
+.--toggle-up {
+    transform: rotate(0deg);
+}
+
+.--toggle-down {
+    transform: rotate(-180deg);
+}
+
 /**
  * =================================================================================
  * BASE
@@ -113,6 +121,10 @@ body {
     flex-direction: column;
     font-family: var(--roboto-condensed);
     min-height: 100%;
+}
+
+.collapsible {
+    cursor: pointer;
 }
 
 /**
@@ -541,6 +553,7 @@ body {
 .swiper-slide__title:hover {
     text-decoration: underline;
 }
+
 /**
  * =================================================================================
  * LETTERS (BASE)
@@ -1427,6 +1440,7 @@ body {
     background: url(../img/icons/chevron.png) center no-repeat;
     height: 15px;
     width: 15px;
+    transition: all .5s .2s
 }
 
 .filter__options {
@@ -1434,7 +1448,16 @@ body {
     font-family: var(--roboto-condensed);
     font-size: 16px;
     font-weight: 700;
+    max-height: 0;
+    overflow: hidden;
     padding: 10px 0 0 0;
+    transition: .5s;
+}
+
+.filter__nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
 }
 
 .filter-nav__list {

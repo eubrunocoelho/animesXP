@@ -72,3 +72,38 @@ if (loadMoreBtn && genresItems) {
         }
     })
 }
+
+/**
+ * =================================================================================
+ * COLLAPSIBLE
+ * =================================================================================
+ */
+
+const collapsible = document.querySelectorAll('.collapsible');
+
+if (collapsible) {
+    collapsible.forEach((collapsible) => {
+        collapsible.addEventListener('click', () => {
+            const collapsibleContent = collapsible.nextElementSibling,
+                chevron = collapsible.querySelector('.filter__chevron');
+
+            if (collapsibleContent.style.maxHeight) {
+                collapsibleContent.style.maxHeight = null;
+            } else {
+                collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + 'px';
+            }
+
+            let toggleUpToDown = (chevron) => {
+                if (chevron.classList.contains('--toggle-down')) {
+                    chevron.classList.remove('--toggle-down');
+                    chevron.classList.add('--toggle-up');
+                } else {
+                    chevron.classList.remove('--toggle-up');
+                    chevron.classList.add('--toggle-down');
+                }
+            }
+
+            toggleUpToDown(chevron);
+        });
+    });
+}
