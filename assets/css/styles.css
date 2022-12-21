@@ -1578,12 +1578,12 @@ body {
     width: 100%;
 }
 
-.anime-list__summary {
+.anime-list__info {
     flex: 1;
     width: 100%;
 }
 
-.summary__title {
+.anime-list__title {
     color: var(--primary-color);
     display: block;
     font-size: 23px;
@@ -1593,11 +1593,11 @@ body {
     word-break: break-word;
 }
 
-.summary__title:hover {
+.anime-list__title:hover {
     text-decoration: underline;
 }
 
-.summary__language-box {
+.anime__language-box {
     background: #fff;
     border-radius: var(--default-radius);
     color: var(--primary-color);
@@ -1609,13 +1609,13 @@ body {
     padding: 4px 10px 4px 10px;
 }
 
-.summary-genres__list {
+.anime-genres__list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.summary-genres__link {
+.anime-genres__link {
     align-items: center;
     background: var(--primary-color);
     border-radius: var(--default-radius);
