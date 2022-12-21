@@ -126,6 +126,7 @@ body {
     border: none;
     border-radius: var(--default-radius);
     color: #fff;
+    cursor: pointer;
     font-family: var(--rajdhani-font);
     font-size: 16px;
     font-weight: 700;

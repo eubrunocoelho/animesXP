@@ -1,79 +1,74 @@
 /**
  * =================================================================================
- * NOT COMPLETED - BASE
+ * MOBILE SIDENAV
  * =================================================================================
  */
 
-var swiper = new Swiper('.mySwiper', { slidesPerView: 'auto', loop: true, loopFillGroupWithBlank: true, spaceBetween: 20, breakpoints: { 320: { spaceBetween: 10 }, 480: { spaceBetween: 20 } } });
+const windowOverlay = document.querySelector('.window-overlay'),
+    sidenav = document.querySelector('.sidenav'),
+    openSidenavBtn = document.querySelector('.header__mobile-button'),
+    closeSidenavBtn = document.querySelector('.sidenav__close-button');
 
-// /**
-//  * Side navigation
-//  */
+openSidenavBtn.addEventListener('click', () => {
+    openSidenav();
 
-// const windowOverlay = document.querySelector('.window-overlay');
-// const sidenav = document.querySelector('.sidenav');
-// const sidenavOpenBtn = document.querySelector('.header__mobile-button');
-// const sidenavCloseBtn = document.querySelector('.sidenav__close-button');
+    closeSidenavBtn.addEventListener('click', () => closeSidenav());
+    window.addEventListener('click', (e) => {
+        if (e.target == windowOverlay) {
+            closeSidenav();
+        }
+    })
+})
 
-// sidenavOpenBtn.addEventListener('click', () => {
-//     openSidenav();
+let openSidenav = () => {
+    windowOverlay.style.display = 'block';
+    setTimeout(() => sidenav.style.left = '0', 200);
+}
 
-//     sidenavCloseBtn.addEventListener('click', () => closeSidenav());
-//     window.addEventListener('click', (event) => {
-//         if (event.target == windowOverlay) {
-//             closeSidenav();
-//         }
-//     })
-// });
+let closeSidenav = () => {
+    sidenav.style.left = '-290px';
+    setTimeout(() => windowOverlay.style.display = 'none', 200);
+}
 
-// var openSidenav = () => {
-//     windowOverlay.style.display = 'block';
+/**
+ * =================================================================================
+ * LOAD-MORE (GENRES)
+ * =================================================================================
+ */
 
-//     setTimeout(() => {
-//         sidenav.style.left = '0';
-//     }, 200);
-// };
+const loadMoreBtn = document.querySelector('.load-more'),
+    genresItems = document.querySelectorAll('.genres-box__item');
 
-// var closeSidenav = () => {
-//     sidenav.style.left = '-290px';
+let displayItems = 12;
 
-//     setTimeout(() => {
-//         windowOverlay.style.display = 'none';
-//     }, 200);
-// }
+if (loadMoreBtn && genresItems) {
 
-// /**
-//  * =======================================================
-//  */
 
-// const genreLoadMoreBtn = document.querySelector('#load-more')
+    for (let i = 0; i < displayItems; i++) {
+        genresItems[i].style.display = 'block';
+    }
 
-// var displayItems = 15;
-// var genresItem = document.querySelectorAll('.genres__item');
+    loadMoreBtn.addEventListener('click', () => {
+        const visibleItems = document.querySelectorAll('.genres-box__item'),
+            genresList = document.querySelector('.genres-box__list');
 
-// for (var i = 0; i < displayItems; i++) {
-//     genresItem[i].style.display = 'block';
-// }
+        let count = 0;
 
-// genreLoadMoreBtn.addEventListener('click', () => {
-//     var visible = document.querySelectorAll('.genres__item');
-//     var count = 0;
+        for (let i = 0; i < visibleItems.length; i++) {
+            if (visibleItems[i].style.display != 'block') {
+                visibleItems[i].style.display = 'block';
+            }
+        }
 
-//     for (var i = 0; i < visible.length; i++) { 
-//         if (visible[i].style.display != 'block') {
-//             visible[i].style.display = 'block';
-//         }
-//     }
+        for (let i = 0; i < visibleItems.length; i++) {
+            if (visibleItems[i].style.display != 'none') {
+                count++;
+            }
+        }
 
-//     count = 0;
-
-//     for (var i = 0; i < visible.length; i++) {
-//         if (visible[i].style.display != 'none') {
-//             count++;
-//         }
-//     }
-    
-//     if (count == visible.length) {
-//         genreLoadMoreBtn.outerHTML = '';
-//     }
-// });
+        if (count == visibleItems.length) {
+            genresList.style.margin = '0 0 0 0';
+            loadMoreBtn.style.display = 'none';
+        }
+    })
+}
