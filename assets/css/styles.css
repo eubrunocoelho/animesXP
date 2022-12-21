@@ -453,6 +453,21 @@ body {
 
 /**
  * =================================================================================
+ * WRAPPER
+ * =================================================================================
+ */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0;
+    max-width: 1200px;
+    padding: 0 8px 0 8px;
+    width: 100%;
+}
+
+/**
+ * =================================================================================
  * SECTION (BASE)
  * =================================================================================
  */
@@ -524,6 +539,237 @@ body {
 
 .swiper-slide__title:hover {
     text-decoration: underline;
+}
+/**
+ * =================================================================================
+ * LETTERS (BASE)
+ * =================================================================================
+ */
+
+.letters {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 8px 0 8px;
+    width: 100%;
+}
+
+/**
+ * =================================================================================
+ * LETTERS (BOX)
+ * =================================================================================
+ */
+
+.letters-box {
+    background: #eee;
+    border-radius: var(--default-radius);
+    padding: 10px 14px 10px 14px;
+}
+
+.letters-box__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.letters-box__link {
+    align-items: center;
+    border-radius: var(--default-radius);
+    color: var(--primary-color);
+    display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    text-decoration: none;
+    width: 30px;
+}
+
+.letters-box__link:hover {
+    background: #fff;
+}
+
+/**
+ * =================================================================================
+ * SEARCH-BOX 'N SEARCH RESULT
+ * =================================================================================
+ */
+
+.search-box {
+    background: #eee;
+    border-radius: var(--default-radius);
+    display: flex;
+    margin: 0 0 30px 0;
+    padding: 18px 10px 18px 10px;
+    width: 100%;
+}
+
+.search-box__form {
+    position: relative;
+    width: 100%;
+}
+
+.search-box__input {
+    background: #fff;
+    border: 1px solid #cacaca;
+    border-radius: var(--default-radius);
+    color: #6e6e6e;
+    font-family: var(--roboto-condensed);
+    font-size: 17px;
+    font-weight: 400;
+    height: 48px;
+    outline: none;
+    padding: 0 58px 0 18px;
+    width: 100%;
+}
+
+.search-box__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 48px;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    width: 48px;
+}
+
+.search-box__icon {
+    color: var(--primary-color);
+    font-size: 36px;
+}
+
+/**
+ * =================================================================================
+ * ANIME LIST
+ * =================================================================================
+ */
+
+.anime-list {
+    flex: 0;
+}
+
+.anime-list__item {
+    background: #eee;
+    border-radius: var(--default-radius);
+    display: flex;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 28px 10px 28px 10px;
+}
+
+.anime-list__cover {
+    background-color: #cecece;
+    border-radius: var(--default-radius);
+    height: 146px;
+    margin: 0 12px 0 0;
+    width: 98px;
+}
+
+.anime-list__cover:hover {
+    opacity: .92;
+}
+
+.anime-list__img {
+    border-radius: var(--default-radius);
+    height: 100%;
+    width: 100%;
+}
+
+.anime-list__info {
+    flex: 1;
+    width: 100%;
+}
+
+.anime-list__title {
+    color: var(--primary-color);
+    display: block;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 6px 0 10px 0;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.anime-list__title:hover {
+    text-decoration: underline;
+}
+
+.anime__language-box {
+    background: #fff;
+    border-radius: var(--default-radius);
+    color: var(--primary-color);
+    display: inline-block;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding: 4px 10px 4px 10px;
+}
+
+.anime-genres__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.anime-genres__link {
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: var(--default-radius);
+    color: #fff;
+    display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    padding: 0 12px 0 12px;
+    text-decoration: none;
+}
+
+/**
+ * =================================================================================
+ * PAGINATION
+ * =================================================================================
+ */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination__container {
+    background: #eee;
+    border-radius: var(--default-radius);
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: max-content;
+}
+
+.pagination__list {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination__link {
+    align-items: center;
+    border-radius: var(--default-radius);
+    color: var(--primary-color);
+    display: flex;
+    font-family: var(--rajdhani-font);
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    text-decoration: none;
+    width: 30px;
+}
+
+.pagination__link:hover {
+    background: #fff;
 }
 
 /**
@@ -961,71 +1207,6 @@ body {
 
 /**
  * =================================================================================
- * LETTERS (BASE)
- * =================================================================================
- */
-
-.letters {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 8px 0 8px;
-    width: 100%;
-}
-
-/**
- * =================================================================================
- * LETTERS (BOX)
- * =================================================================================
- */
-
-.letters-box {
-    background: #eee;
-    border-radius: var(--default-radius);
-    padding: 10px 14px 10px 14px;
-}
-
-.letters-box__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.letters-box__link {
-    align-items: center;
-    border-radius: var(--default-radius);
-    color: var(--primary-color);
-    display: flex;
-    font-family: var(--rajdhani-font);
-    font-size: 14px;
-    font-weight: 700;
-    height: 30px;
-    justify-content: center;
-    text-decoration: none;
-    width: 30px;
-}
-
-.letters-box__link:hover {
-    background: #fff;
-}
-
-/**
- * =================================================================================
- * WRAPPER
- * =================================================================================
- */
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto 0;
-    max-width: 1200px;
-    padding: 0 8px 0 8px;
-    width: 100%;
-}
-
-/**
- * =================================================================================
  * CARDS (NEW EPISODES)
  * =================================================================================
  */
@@ -1434,188 +1615,6 @@ body {
     font-family: var(--roboto-condensed);
     font-weight: 400;
     margin: 6px 0 0 0;
-}
-
-/**
- * =================================================================================
- * SEARCH-BOX 'N SEARCH RESULT
- * =================================================================================
- */
-
-.search-box {
-    background: #eee;
-    border-radius: var(--default-radius);
-    display: flex;
-    margin: 0 0 30px 0;
-    padding: 18px 10px 18px 10px;
-    width: 100%;
-}
-
-.search-box__form {
-    position: relative;
-    width: 100%;
-}
-
-.search-box__input {
-    background: #fff;
-    border: 1px solid #cacaca;
-    border-radius: var(--default-radius);
-    color: #6e6e6e;
-    font-family: var(--roboto-condensed);
-    font-size: 17px;
-    font-weight: 400;
-    height: 48px;
-    outline: none;
-    padding: 0 58px 0 18px;
-    width: 100%;
-}
-
-.search-box__button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    height: 48px;
-    line-height: 0;
-    position: absolute;
-    right: 0;
-    width: 48px;
-}
-
-.search-box__icon {
-    color: var(--primary-color);
-    font-size: 36px;
-}
-
-/**
- * =================================================================================
- * ANIME LIST
- * =================================================================================
- */
-
-.anime-list {
-    flex: 0;
-}
-
-.anime-list__item {
-    background: #eee;
-    border-radius: var(--default-radius);
-    display: flex;
-    width: 100%;
-    margin: 0 0 30px 0;
-    padding: 28px 10px 28px 10px;
-}
-
-.anime-list__cover {
-    background-color: #cecece;
-    border-radius: var(--default-radius);
-    height: 146px;
-    margin: 0 12px 0 0;
-    width: 98px;
-}
-
-.anime-list__cover:hover {
-    opacity: .92;
-}
-
-.anime-list__img {
-    border-radius: var(--default-radius);
-    height: 100%;
-    width: 100%;
-}
-
-.anime-list__info {
-    flex: 1;
-    width: 100%;
-}
-
-.anime-list__title {
-    color: var(--primary-color);
-    display: block;
-    font-size: 23px;
-    font-weight: 700;
-    margin: 6px 0 10px 0;
-    text-decoration: none;
-    word-break: break-word;
-}
-
-.anime-list__title:hover {
-    text-decoration: underline;
-}
-
-.anime__language-box {
-    background: #fff;
-    border-radius: var(--default-radius);
-    color: var(--primary-color);
-    display: inline-block;
-    font-family: var(--rajdhani-font);
-    font-size: 14px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-    padding: 4px 10px 4px 10px;
-}
-
-.anime-genres__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.anime-genres__link {
-    align-items: center;
-    background: var(--primary-color);
-    border-radius: var(--default-radius);
-    color: #fff;
-    display: flex;
-    font-family: var(--rajdhani-font);
-    font-size: 14px;
-    font-weight: 700;
-    height: 24px;
-    padding: 0 12px 0 12px;
-    text-decoration: none;
-}
-
-/**
- * =================================================================================
- * PAGINATION
- * =================================================================================
- */
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.pagination__container {
-    background: #eee;
-    border-radius: var(--default-radius);
-    display: flex;
-    justify-content: center;
-    padding: 10px 20px 10px 20px;
-    width: max-content;
-}
-
-.pagination__list {
-    display: flex;
-    gap: 10px;
-}
-
-.pagination__link {
-    align-items: center;
-    border-radius: var(--default-radius);
-    color: var(--primary-color);
-    display: flex;
-    font-family: var(--rajdhani-font);
-    font-size: 14px;
-    font-weight: 700;
-    height: 30px;
-    justify-content: center;
-    text-decoration: none;
-    width: 30px;
-}
-
-.pagination__link:hover {
-    background: #fff;
 }
 
 /**
