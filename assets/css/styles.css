@@ -715,17 +715,23 @@ body {
     padding: 20px 0 0 0;
 }
 
-.anime-episodes__thumbnail {
+/* .anime-episodes__thumbnail */
+/* .anime-episodes__thumbnail-box */
+
+.anime-episodes__thumbnail-box {
     height: 60px;
     margin: 0 20px 0 0;
     width: 106px;
 }
 
-.anime-episodes__thumbnail:hover {
+.anime-episodes__thumbnail-box:hover {
     opacity: .92;
 }
 
-.anime-episodes__img {
+/* .anime-episodes__img */
+/* .anime-episodes__thumbnail-img */
+
+.anime-episodes__thumbnail-img {
     background: #cecece;
     border-radius: var(--default-radius);
     height: 60px;
