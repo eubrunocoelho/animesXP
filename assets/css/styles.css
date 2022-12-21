@@ -800,7 +800,6 @@ body {
 }
 
 .anime-summary__cover {
-    background: #cecece;
     border-radius: var(--default-radius);
     display: flex;
     grid-area: summary-cover;
@@ -809,6 +808,7 @@ body {
 }
 
 .anime-summary__img {
+    background: #cecece;
     border-radius: var(--default-radius);
     height: 353px;
     width: 235px;
