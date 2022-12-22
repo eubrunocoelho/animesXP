@@ -93,13 +93,13 @@ if (collapsible) {
                 collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + 'px';
             }
 
-            let toggleUpToDown = (chevron) => {
-                if (chevron.classList.contains('--toggle-down')) {
-                    chevron.classList.remove('--toggle-down');
-                    chevron.classList.add('--toggle-up');
+            let toggleUpToDown = (element) => {
+                if (element.classList.contains('--toggle-down')) {
+                    element.classList.remove('--toggle-down');
+                    element.classList.add('--toggle-up');
                 } else {
-                    chevron.classList.remove('--toggle-up');
-                    chevron.classList.add('--toggle-down');
+                    element.classList.remove('--toggle-up');
+                    element.classList.add('--toggle-down');
                 }
             }
 
